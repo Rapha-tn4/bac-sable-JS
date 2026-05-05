@@ -201,8 +201,8 @@ console.log(ajouter(5,2))
 
 
 // role : poser une question
-//parametre : les valeurs à ajouter
-//return: le résultat
+//parametre : 
+//return: la réponse
 
 
 function poserquestion(){
@@ -211,6 +211,108 @@ return reponse;
 }
 
 console.log(poserquestion());
+
+
+//role : fonction qui convertir un montant en euros en dollars
+//paramètre : montant (en paramètre) à convertir
+//return: résultat de la conversion
+
+function conversionDoll(e){
+     return e * 1.17;
+     
+}
+console.log(conversionDoll(15));
+
+
+//role : retourner le 3ème élément
+//paramètre : listes
+//return: afficher l'élément en question
+
+function afficherelements(liste){
+    let elements = liste.split (",");
+    return elements [2];
+
+}
+console.log (afficherelements("pomme, orange, banane"));
+
+//role : demander un prix et un taux de change à l'utilisateur
+// paramètre : un prix et un taux de change
+// return : prix convertit
+
+
+function convertisseur(){
+
+    //demande le prix à convertir
+    let prix = parseFloat(prompt("quel prix veux tu convertir ? "))
+    
+
+    // demande le taux
+    let taux = parseFloat(prompt("a quel taux ?"))
+
+    //convertit
+    return prix * taux
+
+    // retourne le resultat
+}
+
+let prixConvertit=convertisseur()
+
+
+alert(`le prix est de ${prixConvertit} dollars`)
+
+
+
+//role : calculer une moyenne a partir des notes donné par l'utilisateur
+// paramètre : les moyennes
+// return : les moyennes calculés
+
+function calculmoyenne(){
+
+    // demander note français et convertir en type number
+let francais = parseFloat(prompt("note de francais ?"))
+
+    // demander note maths et convertir en type number
+
+
+    // demander note histoire et convertir en type number
+
+    // demander note svt et convertir en type number
+
+    // calculer moyenne
+ let moyenne= (francais + maths + svt + histoire)/4
+
+    // retourner moyenne
+return ;
+
+
+}
+
+let moyenneg = calculmoyenne
+ alert (`la moyenne est de ${moyenneg}`) 
+ 
+ 
+
+    
+
+2=== 1+1
+2==="2"
+2=="2"
+"b">"a"
+"b"+"a"
+"a"+"b" ==="ab"
+"mot".length===3
+"Nicolas".charAt(3) ==="a"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
