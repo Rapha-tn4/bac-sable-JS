@@ -308,10 +308,7 @@ let moyenneg = calculmoyenne
 
 
 
-
-
-
-
+  
 
 
 

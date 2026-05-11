@@ -66,14 +66,7 @@ let meteo = "neige";
 
 
 
-if ("meteo" === "pluie") {
-    console.log("prends ton parapluie")
-}
-else if ("meteo" == "soleil") {
-    console.log("prends une casquette")
-} else if{
-    console.log("prends tes bottes")
-}
+
 
 
 
@@ -88,9 +81,8 @@ else if ("meteo" == "soleil") {
 
 
 
-let a =
 
-if(a === b && b === c && a === c) {
+if (a === b && b === c && a === c) {
     console.log("le triangle est equilaterales")
 }
 else if (a != b && b != c && a != c) {
@@ -105,7 +97,7 @@ else {
 
 
 
-if (age >= 18 && membre fidelite || achat100) {
+if (age >= 18 && "membre fidelite" || achat100) {
     console.log("Réduction accordée")
 }
 else {
@@ -142,79 +134,79 @@ function reduction(age, membre, achat) {
 
 
 
-function questionfeu(reponse){
-    let reponse =prompt("quel est la couleur du feu");
-    
-    if(reponse === rouge){
-        console.log("Je m'arrette")
-    
-    }else if(reponse === orange){
-        console.log("Je freine !")
-    
-    }else if(reponse === vert){
-        console.log("Je passe")
-    
-    }else (reponse === autre){
-        console.log("Danger : feu défectueux !")
+    function questionfeu(reponse) {
+        let reponse = prompt("quel est la couleur du feu");
+
+        if (reponse === rouge) {
+            console.log("Je m'arrette")
+
+        } else if (reponse === orange) {
+            console.log("Je freine !")
+
+        } else if (reponse === vert) {
+            console.log("Je passe")
+
+        } else (reponse === autre) 
+            console.log("Danger : feu défectueux !")
+        }
+
+
     }
 
-   
-}
+
+    let moyennesglo = (a, b, c, d);
 
 
-let moyennesglo = (a,b,c,d);
+    // calcul moyenne globale
 
-
-// calcul moyenne globale
-
-function calculcmoyenneglo(a,b,c,d){
-    return (a+b+c+d)/4;
-}
-let moyg= calculcmoyenneglo(12,11,18,9)
-
-
-
-
-// Commentaire
-
-function commentaire(moyennesglo){
-    if(moyennesglo >= 0 && moyennesglo <= 10 ){
-        console.log( "Il faut travailler plus" )
-    
-    }else if(moyennesglo >=10 && moyennesglo <=13){
-        console.log("Poursuivez vos efforts")
-    
-    }else if(moyennesglo >=13 && moyennesglo <=15){
-        console.log("Bon travail")
-    
-    }else if(moyennesglo >=15 && moyennesglo <=17){
-        console.log("Bravo ! ")
+    function calculcmoyenneglo(a, b, c, d) {
+        return (a + b + c + d) / 4;
     }
-    else if(moyennesglo >17){
-        console.log("Félicitations !")
+    let moyg = calculcmoyenneglo(12, 11, 18, 9)
+
+
+
+
+    // Commentaire
+
+    function commentaire(moyennesglo) {
+        if (moyennesglo >= 0 && moyennesglo <= 10) {
+            console.log("Il faut travailler plus")
+
+        } else if (moyennesglo >= 10 && moyennesglo <= 13) {
+            console.log("Poursuivez vos efforts")
+
+        } else if (moyennesglo >= 13 && moyennesglo <= 15) {
+            console.log("Bon travail")
+
+        } else if (moyennesglo >= 15 && moyennesglo <= 17) {
+            console.log("Bravo ! ")
+        }
+        else if (moyennesglo > 17) {
+            console.log("Félicitations !")
+        }
+
     }
 
-}
 
 
 
 
 
+    // Bulletin 
 
-// Bulletin 
-
-// role : afficher le bulletin
-//parametre : la moyenneglo et le commentaire
-//return: l'affichage du bulletin
-
+    // role : afficher le bulletin
+    //parametre : la moyenneglo et le commentaire
+    //return: l'affichage du bulletin
 
 
-function bulletin(moyennesglo,commentaire){
-    return (moyennesglo+" "+commentaire);
 
-}
+    function bulletin(moyennesglo, commentaire) {
+        return (moyennesglo + " " + commentaire);
 
-console.log(bulletin)
+    }
+
+    console.log(bulletin)
 
 
 
