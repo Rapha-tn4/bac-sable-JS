@@ -242,7 +242,7 @@ function emojiAlea() {
 
 
 
-let promo11 = [
+let tableaupromo11 = [
 
     {
         prenom: "alexis",
@@ -273,39 +273,112 @@ let promo11 = [
 
 
 function ficheeleve(tableaupromo11)
+function ficheeleve(tableaupromo11) { }
 
 tableaupromo11.forEach(etudiant => {
 
-    return `l'age de l'eleve est : ${eleve.age}
-        son prénom est ${eleve.prenom}
-        et il habite a ${eleve.ville}`
+    return `l'age de l'eleve est : ${tableaupromo11.age}
+        son prénom est ${tableaupromo11.prenom}
+        et il habite a ${tableaupromo11.ville}`
 })
 
 
 
-function ajouterAuBody(trucAafficher) {
-    document.querySelector("body").innerHTML += trucAafficher
 
+
+
+
+
+
+
+//exo recette
+
+let recette = {
+    nom: "poulet rôti au thym et à l'ail",
+    difficulte: "Facile",
+    tempPreparation: "15 min",
+    tempCuisson: "1h 15 min",
+    nbrPortions: 6,
+    ingredients: ["huile d'olive", "beurre fondu", "feuilles de thym", "sel", "poivre", "ail"]
 }
 
+
+console.log(`Recette du ${recette.nom} difficulté: ${recette.difficulte} Temps de preparation: ${recette.tempPreparation} Temp de cuisson: ${recette.tempCuisson} Pour ${recette.nbrPortions} Liste des ingredients : ${recette.ingredients} `)
+
+
+
+
+//exo 2
+
+
+let recettes = [
+    {
+        nom: "poulet rôti au thym et à l'ail",
+        difficulte: "Facile",
+        tempPreparation: "15 min",
+        tempCuisson: "1h 15 min",
+        nbrPortions: 6,
+        ingredients: ["huile d'olive", "beurre fondu", "feuilles de thym", "sel", "poivre", "ail"]
+    },
+    {
+        nom: "spaghetti à la bolognaise",
+        difficulte: "Moyenne",
+        tempPreparation: "20 min",
+        tempCuisson: "40 min",
+        nbrPortions: 4,
+        ingredients: ["spaghetti", "viande hachée", "oignon", "carotte", "tomate concassée", "ail", "huile d'olive", "sel", "poivre"]
+    },
+    {
+        nom: "salade César",
+        difficulte: "Facile",
+        tempPreparation: "15 min",
+        tempCuisson: "0 min",
+        nbrPortions: 2,
+        ingredients: ["laitue romaine", "croûtons", "parmesan râpé", "filet de poulet", "sauce César", "sel", "poivre"]
+    }
+];
+
+
+
+
+
+
+function ficheRecette(tableauRecette) {
+
+    tableauRecette.forEach(recette => {
+
+        console.log(`
+            Recette du ${recettes.nom} 
+            difficulté: ${recettes.difficulte} 
+            Temps de preparation: ${recettes.tempPreparation} 
+            Temp de cuisson: ${recettes.tempCuisson} 
+            Pour ${recettes.nbrPortions} 
+            Liste des ingredients : ${recettes.ingredients} 
+            `)
+
+    });
+
 ajouterAuBody(`
-    
     <div>
-    <h2>${eleve.prenom}>/h2>
-    <p>${eleve.age} ans </p>
-    <p>${eleve.ville} ans </p>
-    <p> Job : ${eleve.job} ans</p>
-</div>
-
+    <h2>${recette.nom}</h2>
+    <p>Difficulté :${recette.difficulte} </p>
+    <p>Temps de cuisson :${recette.tempCuisson}</p>
+    <p>Nombre de portions :${recette.nbrPortions}</p>
+    <p>Liste des ingredients : </p>
+    <ul>
     
     
     
     
-    `
+    
+    `)
 
-)
 
 
+
+
+
+}
 
 
 
